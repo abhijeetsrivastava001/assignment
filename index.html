@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="left">
+            <div id="billing">
+                <h1>Billing Details</h1>
+                <hr>
+                <small>Want to continue as a Guest.</small>
+                <input type="email" name="email" id="email" placeholder="Email ID">
+                <small>or if you already have an account?<a href="#">login</a></small>
+            </div>
+            <div id="shipping">
+                <h1>Shipping Details</h1>
+                <hr>
+                <div id="country">
+                    <select name="country">
+                        <option value="opt">Select a country</option>
+                        <option value="opt">India</option>
+                        <option value="opt">India</option>
+                        <option value="opt">India</option>
+                    </select></div>
+                <div id="name">
+                    <input type="text" placeholder="First Name" id="first_name">
+                    <input type="text" placeholder="Last Name" id="second_name">
+                </div>
+                <div id="addr">
+                    <input type="text" placeholder="Address">
+                </div>
+                <div id="addr-details">
+                    <input type="text" placeholder="Appartment,Suite,etc">
+                </div>
+                <div id="city">
+                    <input type="text" placeholder="City">
+                    <input type="text" placeholder="State">
+                    <input type="text" placeholder="Pin Code">
+                </div>
+                <div id="phn">
+                    <input type="phone" placeholder="Phone Number">
+                </div>
+            </div>
+            <div>
+                <input type="checkbox" name="check" id="check">Save this information for future transactions
+            </div>
+        </div>
+        <div id="right">
+            <h1>Your Bag</h1>
+            <hr>
+            <div id="product">
+                <img src="helmet.jpg" alt="helmet photo">
+                <div id="details">
+                    <div id="details-title">
+                        
+                    </div>
+                    <div id="below">
+                        <div>
+                            <label for="">Quantity</label>
+                            <div id="add-Quant">
+                                <button  class="incDec" id="dec">-</button>
+                                <h4 id="counter"></h4>
+                                <button class="incDec" id="inc">+</button>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="">Size</label>
+                            <div id="add-size">
+                                <select id="">
+                                    <option value="">XL</option>
+                                    <option value="">L</option>
+                                    <option value="">M</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="total">
+                <h3>Subtotal</h3>
+                <h3 id="total-price"></h3>
+            </div>
+            <button id="payment">PROCEED TO PAYMENT</button>
+        </div>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>
